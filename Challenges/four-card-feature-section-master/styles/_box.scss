@@ -1,0 +1,57 @@
+@use "variables" as v;
+
+.container {
+  padding: 1rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    background-color: v.$white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.2rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 0.8rem;
+    h5 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+      color: v.$grayish-blue;
+    }
+    img {
+      display: block;
+      margin: 1.5rem;
+      margin-left: auto;
+      width: 3.5rem;
+    }
+  }
+  .box-cyan {
+    order: 1;
+    border-top: 3px solid v.$cyan;
+  }
+  .box-red {
+    order: 2;
+    border-top: 3px solid v.$red;
+  }
+  .box-orange {
+    order: 3;
+    border-top: 3px solid v.$orange;
+  }
+  .box-blue {
+    order: 4;
+    border-top: 3px solid v.$blue;
+  }
+
+  @media screen and (min-width: 1115px) {
+    .container {
+      margin-bottom: 0;
+    }
+    .box-pull {
+      transform: translateY(-50%);
+    }
+  }
+}

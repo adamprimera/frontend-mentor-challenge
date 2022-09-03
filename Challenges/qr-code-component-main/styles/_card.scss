@@ -1,0 +1,44 @@
+@use "./variable" as v;
+.container {
+  padding: 1.6rem;
+  padding-top: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .card {
+    border-radius: 2rem;
+    max-width: 35rem;
+    background-color: v.$white;
+    box-shadow: 0 3px 20px v.$white;
+    padding: 1.7rem;
+
+    .hero {
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .text-wrapper {
+      width: 100%;
+      padding: 1rem;
+      .text-title {
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .description {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1.7rem;
+        font-size: 1.5rem;
+        text-align: center;
+        color: v.$grayish-blue;
+      }
+    }
+  }
+}

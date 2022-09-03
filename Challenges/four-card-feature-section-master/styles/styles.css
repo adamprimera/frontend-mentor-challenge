@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+.header-wrapper {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 28rem;
+}
+.header-wrapper .title {
+  font-size: 1.8rem;
+  display: inline;
+  margin: 0 auto;
+  font-weight: 200;
+}
+.header-wrapper .title span {
+  display: block;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.header-wrapper .sub-title {
+  font-size: 0.8rem;
+  display: inline;
+  color: hsl(229deg, 6%, 66%);
+}
+
+@media screen and (min-width: 1115px) {
+  .header-wrapper {
+    margin-bottom: 7rem;
+  }
+}
+.container {
+  padding: 1rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container .box {
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+  width: 20rem;
+  padding: 1rem;
+  margin: 0.8rem;
+}
+.container .box h5 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.container .box p {
+  font-size: 0.8rem;
+  color: hsl(229deg, 6%, 66%);
+}
+.container .box img {
+  display: block;
+  margin: 1.5rem;
+  margin-left: auto;
+  width: 3.5rem;
+}
+.container .box-cyan {
+  order: 1;
+  border-top: 3px solid hsl(180deg, 62%, 55%);
+}
+.container .box-red {
+  order: 2;
+  border-top: 3px solid hsl(0deg, 78%, 62%);
+}
+.container .box-orange {
+  order: 3;
+  border-top: 3px solid hsl(34deg, 97%, 64%);
+}
+.container .box-blue {
+  order: 4;
+  border-top: 3px solid hsl(212deg, 86%, 64%);
+}
+@media screen and (min-width: 1115px) {
+  .container .container {
+    margin-bottom: 0;
+  }
+  .container .box-pull {
+    transform: translateY(-50%);
+  }
+}/*# sourceMappingURL=styles.css.map */
